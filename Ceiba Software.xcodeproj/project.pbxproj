@@ -11,6 +11,12 @@
 		831E7F16293BF51B005085AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F15293BF51B005085AB /* ContentView.swift */; };
 		831E7F18293BF520005085AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831E7F17293BF520005085AB /* Assets.xcassets */; };
 		831E7F1B293BF520005085AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831E7F1A293BF520005085AB /* Preview Assets.xcassets */; };
+		831E7F24293C06F0005085AB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F23293C06F0005085AB /* UserListView.swift */; };
+		831E7F26293C0E64005085AB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F25293C0E64005085AB /* Globals.swift */; };
+		831E7F2A293D5CD4005085AB /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F29293D5CD3005085AB /* UserDetailView.swift */; };
+		831E7F2D293E352C005085AB /* Ceiba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F2B293E352C005085AB /* Ceiba.xcdatamodeld */; };
+		831E7F40293E4B1A005085AB /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F3E293E4B1A005085AB /* User+CoreDataClass.swift */; };
+		831E7F41293E4B1A005085AB /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E7F3F293E4B1A005085AB /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		831E7F15293BF51B005085AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		831E7F17293BF520005085AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		831E7F1A293BF520005085AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		831E7F23293C06F0005085AB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		831E7F25293C0E64005085AB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		831E7F29293D5CD3005085AB /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		831E7F2C293E352C005085AB /* Ceiba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ceiba.xcdatamodel; sourceTree = "<group>"; };
+		831E7F3E293E4B1A005085AB /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "Ceiba Software/User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		831E7F3F293E4B1A005085AB /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Ceiba Software/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,8 @@
 		831E7F07293BF51A005085AB = {
 			isa = PBXGroup;
 			children = (
+				831E7F3E293E4B1A005085AB /* User+CoreDataClass.swift */,
+				831E7F3F293E4B1A005085AB /* User+CoreDataProperties.swift */,
 				831E7F12293BF51B005085AB /* Ceiba Software */,
 				831E7F11293BF51B005085AB /* Products */,
 			);
@@ -53,8 +67,12 @@
 			children = (
 				831E7F13293BF51B005085AB /* Ceiba_SoftwareApp.swift */,
 				831E7F15293BF51B005085AB /* ContentView.swift */,
+				831E7F23293C06F0005085AB /* UserListView.swift */,
+				831E7F29293D5CD3005085AB /* UserDetailView.swift */,
+				831E7F25293C0E64005085AB /* Globals.swift */,
 				831E7F17293BF520005085AB /* Assets.xcassets */,
 				831E7F19293BF520005085AB /* Preview Content */,
+				831E7F2B293E352C005085AB /* Ceiba.xcdatamodeld */,
 			);
 			path = "Ceiba Software";
 			sourceTree = "<group>";
@@ -139,6 +157,12 @@
 			files = (
 				831E7F16293BF51B005085AB /* ContentView.swift in Sources */,
 				831E7F14293BF51B005085AB /* Ceiba_SoftwareApp.swift in Sources */,
+				831E7F2A293D5CD4005085AB /* UserDetailView.swift in Sources */,
+				831E7F40293E4B1A005085AB /* User+CoreDataClass.swift in Sources */,
+				831E7F26293C0E64005085AB /* Globals.swift in Sources */,
+				831E7F2D293E352C005085AB /* Ceiba.xcdatamodeld in Sources */,
+				831E7F41293E4B1A005085AB /* User+CoreDataProperties.swift in Sources */,
+				831E7F24293C06F0005085AB /* UserListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +291,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ceiba Software/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H2AKA2B37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,13 +320,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ceiba Software/Preview Content\"";
+				DEVELOPMENT_TEAM = 4H2AKA2B37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		831E7F2B293E352C005085AB /* Ceiba.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				831E7F2C293E352C005085AB /* Ceiba.xcdatamodel */,
+			);
+			currentVersion = 831E7F2C293E352C005085AB /* Ceiba.xcdatamodel */;
+			path = Ceiba.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 831E7F08293BF51B005085AB /* Project object */;
 }

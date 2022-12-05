@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    let persistence = CoreDataViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            UserListView().environment(\.managedObjectContext, persistence.container.viewContext)
         }
         .padding()
     }
